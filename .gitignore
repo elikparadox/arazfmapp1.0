@@ -1,10 +1,36 @@
-# OSX
-#
+# macOS
 .DS_Store
 
-# Xcode
-#
-build/
+# node.js
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# Logs
+*.log
+
+# Expo / Metro
+.expo/
+.expo-shared/
+*.expo
+.expo-health-check/
+metro-cache/
+metro-health-check/
+
+# Android
+android/.gradle/
+android/.idea/
+android/.cxx/
+android/local.properties
+android/app/build/
+android/build/
+*.apk
+*.keystore
+*.hprof
+
+# Xcode / iOS (на будущее)
+ios/build/
+ios/Pods/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -13,62 +39,52 @@ build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+*.xcuserstate
 *.xccheckout
-*.moved-aside
-DerivedData
+xcuserdata/
+DerivedData/
 *.hmap
 *.ipa
-*.xcuserstate
-**/.xcode.env.local
+*.xcode.env.local
 
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
+# JetBrains
+.idea/
 *.iml
-*.hprof
-.cxx/
-*.keystore
-!debug.keystore
 
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
+# TrackPlayer cache (безопасность)
+track-player-cache/
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
+# Testing / coverage
+coverage/
+jest-cache/
+jest-output/
 
+# Build artifacts
+*.jsbundle
+*.bundle
+
+# Environment
+.env
+.env.local
+.env.production
+.env.development
+
+# Fastlane
 **/fastlane/report.xml
 **/fastlane/Preview.html
 **/fastlane/screenshots
 **/fastlane/test_output
 
-# Bundle artifact
-*.jsbundle
+# VS Code
+.vscode/
 
-# Ruby / CocoaPods
-**/Pods/
-/vendor/bundle/
+# Supabase generated files (если экспорт)
+supabase/migrations/
+.supabase/
 
-# Temporary files created by Metro to check the health of the file watcher
-.metro-health-check*
-
-# testing
-/coverage
-
-# Yarn
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+# Misc
+tmp/
+*.tmp
+*.swp
+*.bak
+*.old
