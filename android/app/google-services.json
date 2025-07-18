@@ -1,0 +1,57 @@
+{
+  "project_info": {
+    "project_number": "990756236981",
+    "project_id": "otpfinal-465612",
+    "storage_bucket": "otpfinal-465612.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990756236981:android:7bfef6ab0c0ebfd89718fc",
+        "android_client_info": {
+          "package_name": "com.arazfmapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvsaRQ6Y3to-7snccxBEnaNfDyZfMxTrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990756236981:android:32f5bc9d28351f289718fc",
+        "android_client_info": {
+          "package_name": "com.otpauthapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990756236981-2l23airetmovq0an1hmf8rff5f60hnih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.otpauthapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvsaRQ6Y3to-7snccxBEnaNfDyZfMxTrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
