@@ -27,7 +27,7 @@ const RegisterScreen = () => {
       <SafeAreaView style={styles.container}>
         {/* Назад */}
         <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
-          <Image source={ArrowLeft} style={styles.backIcon} />
+        <Image source={ArrowLeft} style={styles.backIcon} />
         </TouchableOpacity>
 
         <Text style={styles.title}>Create an account</Text>

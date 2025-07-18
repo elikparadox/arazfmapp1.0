@@ -10,7 +10,6 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import TrackPlayer from 'react-native-track-player';
 import { useNavigation } from '@react-navigation/native';
-
 import ArazLogo from '../assets/Arazlogo.png';
 import PlayButtonImage from '../assets/playbutton.png';
 import Img1 from '../assets/1.jpg';
@@ -60,12 +59,12 @@ const PlayerScreen = () => {
   return (
     <LinearGradient colors={['#00D0E0', '#006D78']} style={styles.container}>
       <View style={styles.logoWrapper}>
-        <Image source={ArazLogo} style={styles.logo} resizeMode="contain" />
+         <Image source={ArazLogo} style={styles.logo} resizeMode="contain" />
       </View>
 
       <View style={styles.playButtonWrapper}>
         <TouchableOpacity onPress={togglePlayback}>
-          <Image
+         <Image
             source={PlayButtonImage}
             style={styles.playButtonImage}
             resizeMode="contain"
@@ -88,6 +87,7 @@ const PlayerScreen = () => {
                 style={styles.carouselImage}
                 resizeMode="cover"
               />
+
             </View>
           ))}
         </ScrollView>
