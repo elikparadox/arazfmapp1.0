@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { SafeAreaView } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
-import PlayerScreen from './components/PlayerScreen';
+import PlayerScreen from './screens/PlayerScreen';
 
 const App = () => {
   useEffect(() => {
