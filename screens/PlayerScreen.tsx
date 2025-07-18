@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import TrackPlayer from 'react-native-track-player';
+import { useNavigation } from '@react-navigation/native';
 
 import ArazLogo from '../assets/Arazlogo.png';
 import PlayButtonImage from '../assets/playbutton.png';
@@ -20,6 +21,7 @@ import styles from './PlayerScreen.styles';
 const { width } = Dimensions.get('window');
 
 const PlayerScreen = () => {
+  const navigation = useNavigation();
   const scrollRef = useRef<ScrollView>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -100,7 +102,10 @@ const PlayerScreen = () => {
       </View>
 
       <View style={styles.registerWrapper}>
-        <TouchableOpacity style={styles.registerButton}>
+        <TouchableOpacity
+          style={styles.registerButton}
+          onPress={() => navigation.navigate('Register')}
+        >
           <Text style={styles.registerText}>Register</Text>
         </TouchableOpacity>
       </View>
@@ -109,5 +114,3 @@ const PlayerScreen = () => {
 };
 
 export default PlayerScreen;
-
-
